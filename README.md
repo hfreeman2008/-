@@ -1,7 +1,7 @@
 # 鸿蒙开发(HarmonyOS)从零开始
 
 
-<img src="image/harmony_os_001.png">
+<img src="image/flower.png">
 
 
 ---
@@ -14,3 +14,4 @@
 
 
 
+<img src="image/harmony_os_002.png">
