@@ -47,6 +47,11 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 (5)按照鸿蒙开发快速入门二篇官方文档，完成HelloWorld的开发和运行，查看效果。
 
+我大概花了极短的时间就把HelloWorld的Demo跑起来了，中间没有任何问题；
+
+这说明鸿蒙的开发工具DevEco Studi是下了功夫的，对于开发者来说是非常友好的。
+
+
 备注：
 
 如果我们没有鸿蒙设备，我们选择在模拟器上运行Demo：
@@ -174,7 +179,12 @@ struct Index {
 
 这对于android开发者来说，不是一个好消息啊，需要多学习一门开发语言，宝宝心里苦啊；
 
-(2)其他的不同处，还待发现；
+(2)接口api全部不同
+
+因为开发语言的不同，导致开发接口api全部不一样了；
+
+
+(3)其他的不同处，还待发现；
 
 
 - 比较鸿蒙系统与android系统的优劣势
@@ -182,9 +192,11 @@ struct Index {
 待发现；
 
 
+
 - 回答一下鸿蒙系统到底是不是android系统的套皮疑惑？
 
 当前还无结论；
+
 
 
 # 参考资料
