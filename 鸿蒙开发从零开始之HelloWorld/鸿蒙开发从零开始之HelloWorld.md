@@ -108,6 +108,62 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 ---
 
+# HelloWorld 显示效果
+
+界面显示一个Button，一个Text，点击一次Button，Text显示点击Button次数；
+
+
+![alt text](helloworld_demo_show.png)
+
+
+# 关键的几个文件
+
+## Index.ets--界面显示文件
+
+```java
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+@Entry
+@Component
+struct Index {
+  @State message: string = 'Hello World';
+
+  @State num: number = 0 //点击Button次数
+
+  build() {
+    RelativeContainer() {
+      Text(this.message)//显示点击Button次数的Text
+        .id('HelloWorld')
+        .fontSize(50)
+        .fontWeight(FontWeight.Bold)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Center },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
+      Divider()
+      //Button(`click me num 的值为：${this.num}`)
+      Button(`click me`)//Button组件
+        .onClick(()=>{//Button click方法
+          this.num =  this.num + 1
+          this.message='click me :'.toString() + this.num.toString() //调整点击Button次数显示
+        })
+        .height(100)
+        .width('100%')
+        .fontSize(30)
+        .margin({top:20})
+    }
+    .height('100%')
+    .width('100%')
+  }
+}
+```
+
+
+
+
+
+---
+
 
 
 
