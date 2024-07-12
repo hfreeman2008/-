@@ -62,6 +62,26 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 ![项目的目录结构](项目的目录结构.png)
 
 
+1.module.json5
+模块配置文件。主要包含HAP包的配置信息、应用/服务在具体设备上的配置信息以及应用/服务的全局配置信息。
+
+2.entryability.ets
+应用/服务的入口
+
+3.Index.ets
+应用/服务包含的页面
+
+4.resources/zh_CN
+中文字符串
+
+5.resources/en_US
+英文字符串
+
+6.resources/base/media
+多媒体资源，包括图片等
+
+7.resources/base/element
+其他资源，包括color等
 
 
 ---
