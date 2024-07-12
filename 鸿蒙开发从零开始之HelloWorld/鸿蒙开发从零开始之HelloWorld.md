@@ -56,6 +56,17 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 ---
 
 
+# 项目的目录结构介绍
+
+
+![项目的目录结构](项目的目录结构.png)
+
+
+
+
+---
+
+
 
 
 # 参考资料
