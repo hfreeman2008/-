@@ -63,26 +63,48 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 
 1.module.json5
-模块配置文件。主要包含HAP包的配置信息、应用/服务在具体设备上的配置信息以及应用/服务的全局配置信息。
+
+模块配置文件。
+主要包含HAP包的配置信息、应用/服务在具体设备上的配置信息以及应用/服务的全局配置信息。
+
+--类似android系统的AndroidManifest.xml
 
 2.entryability.ets
+
 应用/服务的入口
 
+--类似android系统的Activity.java
+
 3.Index.ets
+
 应用/服务包含的页面
 
+--类似android系统的xml布局文件
+
 4.resources/zh_CN
+
 中文字符串
 
+--类似android系统的中文字符串
+
+
 5.resources/en_US
+
 英文字符串
 
+--类似android系统的英文字符串
+
 6.resources/base/media
+
 多媒体资源，包括图片等
 
+--类似android系统的drawable资源
+
 7.resources/base/element
+
 其他资源，包括color等
 
+--类似android系统的value目录下的资源
 
 ---
 
