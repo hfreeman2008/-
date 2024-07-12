@@ -4,7 +4,7 @@
 
 ---
 
-老规矩，我第一篇文章就是Helloworld，以完成开发环境的配置，鸿蒙开发的基础入门。
+老规矩，第一篇文章就是Helloworld，以完成开发环境的配置，鸿蒙开发的基础入门。
 
 # 必备
 
@@ -116,9 +116,7 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 ![alt text](helloworld_demo_show.png)
 
 
-# 关键的几个文件
-
-## Index.ets--界面显示文件
+# Index.ets--界面显示文件
 
 ```java
 import { hilog } from '@kit.PerformanceAnalysisKit';
@@ -158,11 +156,9 @@ struct Index {
 }
 ```
 
-
-
-
-
 ---
+
+# 小结
 
 
 
