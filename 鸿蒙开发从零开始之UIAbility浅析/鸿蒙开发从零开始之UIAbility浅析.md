@@ -12,6 +12,21 @@
 
 ---
 
+# UIAbility组件生命周期
+
+查看UIAbility组件生命周期的官方文档：
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/uiability-lifecycle-V5
+
+
+类似android开发，UIAbility的生命周期包括Create、Foreground、Background、Destroy四个状态。
+
+
+![UIAbility组件生命周期](./UIAbility组件生命周期.png)
+
+
+---
+
 #  显示效果
 
 在第一个界面点击一个button，跳转到第二个界面；在第二个界面点击返回的button，返回到第一个界面。
@@ -93,6 +108,9 @@
 
 https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/4_2uiability_u7ec4_u4ef6-V5
 
+2.UIAbility组件生命周期
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/uiability-lifecycle-V5
 
 
 ---
