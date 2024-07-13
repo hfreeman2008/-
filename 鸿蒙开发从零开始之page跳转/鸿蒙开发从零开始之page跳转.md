@@ -20,7 +20,8 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 - 图片效果为：
 
-![界面1](界面1.png)  ![界面2](界面2.png)
+
+<img src="界面1.png" alt="描述文字" width="206"  height="409"> <img src="界面2.png" alt="描述文字" width="264"  height="409">
 
 
 
