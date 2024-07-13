@@ -177,6 +177,7 @@ struct Second {
 
 对于page跳转这个角度来说，鸿蒙开发确实是比android开发要更灵活，更方便，更简单，代码量更少。
 
+
 <font face='黑体' color=#ff0000 size=10>鸿蒙系统胜</font>
 
 
