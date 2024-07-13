@@ -16,7 +16,17 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 #  显示效果
 
+在第一个界面点击一个button，跳转到第二个界面；在第二个界面点击返回的button，返回到第一个界面。
 
+- 图片效果为：
+
+![界面1](界面1.png)  ![界面2](界面2.png)
+
+
+
+- 动画效果为：
+
+<img src="./page_jump.gif">
 
 
 # 核心代码
@@ -147,13 +157,6 @@ struct Second {
 
 ---
 
-
-```java
-
-```
-
----
-
 # 小结
 
 
@@ -189,7 +192,7 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 # Demo源码
 
-
+HelloWorld2.rar
 
 
 ---
