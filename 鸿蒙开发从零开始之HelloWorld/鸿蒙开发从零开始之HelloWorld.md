@@ -56,15 +56,16 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 如果我们没有鸿蒙设备，我们选择在模拟器上运行Demo：
 
-![选择Previewer](image_priviewer.png)
+<div align="center"> <img src="image_priviewer.png" /> </div>
+
 
 ---
 
 
 # 项目的目录结构介绍
 
+<div align="center"> <img src="项目的目录结构.png" /> </div>
 
-![项目的目录结构](项目的目录结构.png)
 
 
 1.module.json5
@@ -117,8 +118,8 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 界面显示一个Button，一个Text，点击一次Button，Text显示点击Button次数；
 
+<div align="center"> <img src="helloworld_demo_show.png" /> </div>
 
-![alt text](helloworld_demo_show.png)
 
 
 # Index.ets--界面显示文件
