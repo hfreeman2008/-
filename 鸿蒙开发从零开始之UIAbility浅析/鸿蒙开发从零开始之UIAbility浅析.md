@@ -23,13 +23,13 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/uiability-lifec
 
 ## UIAbility组件生命周期图一：
 
-![UIAbility组件生命周期](./UIAbility组件生命周期.png)
+<div align="center"> <img src="UIAbility组件生命周期.png" /> </div>
 
 
 ## UIAbility组件生命周期图二：
 
+<div align="center"> <img src="UIAbility组件生命周期图二.png" /> </div>
 
-![UIAbility组件生命周期图二](UIAbility组件生命周期图二.png)
 
 对比android Activity的生命周期回调方法和流程，可以清楚的弄明白UIAbility组件生命周期。
 
