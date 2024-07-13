@@ -204,4 +204,6 @@ HelloWorld2.rar
 
 <img src="../image/harmony_os_001.png">
 
+---
 
+[<font face='黑体' color=#ff0000 size=40 >跳转到文章开始</font>](#鸿蒙开发从零开始之page跳转)
