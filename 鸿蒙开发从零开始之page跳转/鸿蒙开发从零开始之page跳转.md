@@ -4,19 +4,19 @@
 
 ---
 
+这篇文章主要目的是学习点击一个Button，实现界面的跳转；
 
+这个就是鸿蒙开发的官网的第一个例子：
 
-# 前期准备
+构建第一个ArkTS应用（Stage模型）：
 
-
-
-
----
-
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-stage-V5
 
 ---
 
 #  显示效果
+
+
 
 
 
@@ -49,9 +49,9 @@
 
 # 参考资料
 
-1.鸿蒙开发官方网址：
+1.构建第一个ArkTS应用（Stage模型）：
 
-https://developer.huawei.com/consumer/cn/develop
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-stage-V5
 
 ---
 
