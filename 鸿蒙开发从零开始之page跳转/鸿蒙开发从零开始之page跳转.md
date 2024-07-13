@@ -27,7 +27,8 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 - 动画效果为：
 
-<img src="./page_jump.gif">
+<div align="center"> <img src="page_jump.gif" /> </div>
+
 
 
 # 核心代码
