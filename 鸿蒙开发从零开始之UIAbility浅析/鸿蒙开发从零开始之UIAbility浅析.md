@@ -3,17 +3,12 @@
 <img src="../image/flower_003.png">
 
 
-
-
 ---
 
-这篇文章主要目的是学习点击一个Button，实现界面的跳转；
+这篇文章主要目的是初步学习Ability Kit（程序框架服务）的UIAbility组件；
 
-这个就是鸿蒙开发的官网的第一个例子：
+对比android开发中的Activity，UIAbility我们需要了解其生命周期的接口。
 
-构建第一个ArkTS应用（Stage模型）：
-
-https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-stage-V5
 
 ---
 
@@ -94,9 +89,11 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-
 
 # 参考资料
 
-1.构建第一个ArkTS应用（Stage模型）：
+1.UIAbility组件：
 
-https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/start-with-ets-stage-V5
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/4_2uiability_u7ec4_u4ef6-V5
+
+
 
 ---
 
