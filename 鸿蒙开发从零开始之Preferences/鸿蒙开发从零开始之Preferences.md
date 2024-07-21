@@ -29,6 +29,20 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/data-persistenc
 
  ---
 
+# Preferences的接口和SharedPreferences的接口
+
+## Preferences api
+
+![api](api.png)
+
+## android SharedPreferences api
+
+
+![SharedPreferences_api](SharedPreferences_api.png)
+
+
+ ---
+
  # Demo
 
 ## 导入@kit.ArkData模块
@@ -217,7 +231,11 @@ Stage模型：
 
 - 确认鸿蒙系统与android系统的相似之处
 
-鸿蒙系统Preferences和android系统的SharedPreferences，整体来说设计是极其类似的。这个原因是可能是各个系统的xml数据是基本基础，都是大同小异的。
+鸿蒙系统Preferences和android系统的SharedPreferences，整体来说设计是极其类似的。
+
+这个原因是可能是各个系统的xml数据是基本基础，都是大同小异的。
+
+前面布局相似，我能理解，但是这个数据设计也是太相似了，让人有点心生疑惑啊，为什么这么像？？？
 
 
 
