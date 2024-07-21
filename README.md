@@ -42,6 +42,13 @@
 
 ---
 
+## H6 鸿蒙开发从零开始之Preferences
+
+[鸿蒙开发从零开始之Preferences.md](./鸿蒙开发从零开始之Preferences/鸿蒙开发从零开始之Preferences.md)
+
+---
+
+
 <img src="image/harmony_os_002.png">
 
 
