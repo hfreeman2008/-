@@ -5,23 +5,28 @@
 
 ---
 
-这篇文章主要目的是初步学习Ability Kit（程序框架服务）的UIAbility组件；
+这篇文章主要目的是初步学习Ability Pages跳转和数据传递；
 
+
+参考：
+
+鸿蒙HarmonyOS应用开发入门  柳伟卫 清华大学出版社  2.4 实战：Ability内页面的跳转和数据传递
+
+基于SDK 12(5.0.0)版本，完成调试，可以运行。
 
 
 ---
-
-# UIAbility组件生命周期
-
-
-
----
-
 
 # 核心代码
 
 
-EntryAbility.ets
+
+---
+
+
+
+
+
 
 
 ```java
@@ -31,7 +36,7 @@ EntryAbility.ets
 
 ---
 
-# 启动时的log信息
+
 
 ```java
 
@@ -71,17 +76,7 @@ EntryAbility.ets
 
 # 参考资料
 
-1.UIAbility组件：
-
-https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/4_2uiability_u7ec4_u4ef6-V5
-
-2.UIAbility组件生命周期
-
-https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/uiability-lifecycle-V5
-
-3.uiability的api官方文档
-
-https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/js-apis-app-ability-uiability-V5
+1.鸿蒙HarmonyOS应用开发入门  柳伟卫 清华大学出版社  2.4 实战：Ability内页面的跳转和数据传递
 
 ---
 
