@@ -20,28 +20,53 @@
 # 核心代码
 
 
+- 转到Second page页面，并传递数据
+
+在第一个page：
+
+```java
+import router from '@ohos.router';
+
+......
+    .onClick(() => {
+      //跳转到Second page页面，并传递数据：
+      router.pushUrl({
+        url: 'pages/Second',
+        params:{
+          src:'Indext 页面传来的数据',
+        }
+      },router.RouterMode.Single)
+    })
+
+```
+
+
+- 接收第一个page传递过来的数据
+
+在Second页面，接收第一个page传递过来的数据，并显示出来：
+
+```java
+import router from '@ohos.router';
+......
+//接收第一个page传递过来的数据
+@State data: string = (router.getParams() as Record<string,string>)['src']
+......
+//将传递过来的数据显示出来
+Text(this.data)
+  .fontSize(30)
+  .fontWeight(FontWeight.Bold)
+  .margin({
+    top: 10
+  })
+
+```
+
 
 ---
 
 
 
 
-
-
-
-```java
-
-
-```
-
----
-
-
-
-```java
-
-
-```
 
 
 
