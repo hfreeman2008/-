@@ -63,7 +63,7 @@ Text(this.data)
 
 # 效果为：
 
-<div align="center"> <img src="page_jump.gif" /> </div>
+<div align="center"> <img src="page_jump_with_data.gif" /> </div>
 
 
 ---
