@@ -147,6 +147,62 @@ UI显示效果：
 ## List 4
 
 ```java
+class ContactsGroup {
+  title: string = ''
+  contacts: Array<object> | null = null
+  key: string = ""
+}
+
+export let contactsGroups: object[] = [
+  {
+    title: 'A',
+    contacts: [
+      new Contact('艾佳', $r('app.media.startIcon')),
+      new Contact('安安', $r('app.media.startIcon')),
+      new Contact('Angela', $r('app.media.startIcon')),
+    ],
+    key: util.generateRandomUUID(true)
+  } as ContactsGroup,
+  {
+    title: 'B',
+    contacts: [
+      new Contact('白叶', $r('app.media.startIcon')),
+      new Contact('伯明', $r('app.media.startIcon')),
+    ],
+    key: util.generateRandomUUID(true)
+  } as ContactsGroup,
+// ...
+]
+...
+
+//List 4
+Text("List 4")
+    .fontColor(Color.Red)
+    .fontSize(20)
+    .margin({top:20})
+List() {
+    // 循环渲染ListItemGroup，contactsGroups为多个分组联系人contacts和标题title的数据集合
+    ForEach(contactsGroups, (itemGroup: ContactsGroup) => {
+    ListItemGroup({ header: this.itemHead(itemGroup.title) }) {
+        // 循环渲染ListItem
+        if (itemGroup.contacts) {
+        ForEach(itemGroup.contacts, (item: Contact) => {
+            ListItem() {
+            Row() {
+                Image(item.icon)
+                .width(40)
+                .height(40)
+                .margin(10)
+                Text(item.name).fontSize(20)
+            }
+            .width('100%')
+            .justifyContent(FlexAlign.Start)
+            }
+        }, (item: Contact) => JSON.stringify(item))
+        }
+    }
+    }, (itemGroup: ContactsGroup) => JSON.stringify(itemGroup))
+}.sticky(StickyStyle.Header)  // 设置吸顶，实现粘性标题效果
 
 ```
 
@@ -155,6 +211,7 @@ UI显示效果：
 UI显示效果：
 
 ![list4](list4.png)
+
 
 ---
 
