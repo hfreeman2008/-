@@ -175,6 +175,18 @@ export let contactsGroups: object[] = [
 ]
 ...
 
+// 定义分组联系人数据集合contactsGroups数组
+@Builder itemHead(text: string) {
+// 列表分组的头部组件，对应联系人分组A、B等位置的组件
+Text(text)
+    .fontSize(20)
+    .backgroundColor('#fff1f3f5')
+    .width('100%')
+    .padding(5)
+}
+
+...
+
 //List 4
 Text("List 4")
     .fontColor(Color.Red)
@@ -218,6 +230,46 @@ UI显示效果：
 ## List 5
 
 ```java
+  @State alphabets: Array<string> = ['#', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+  'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+...
+@Builder itemEnd(index: number) {
+// 构建尾端滑出组件
+Button({ type: ButtonType.Circle }) {
+    Image($r('app.media.startIcon'))
+    .width(40)
+    .height(40)
+}
+.onClick(() => {
+    // this.messages为列表数据源，可根据实际场景构造。点击后从数据源删除指定数据项。
+    this.alphabets.splice(index, 1);
+})
+}
+...
+
+//List 5
+Text("List 5")
+    .fontSize(20)
+    .fontColor(Color.Red)
+    .margin({top:20})
+List() {
+    ForEach(this.alphabets, (item: string) => {
+    ListItem() {
+        Row() {
+        Text(item).fontSize(40)
+        }
+        .width('100%')
+        .justifyContent(FlexAlign.Start)
+    }
+    .swipeAction({
+        end: {
+        // index为该ListItem在List中的索引值。
+        builder: () => { this.itemEnd(0) },
+        }
+    }) // 设置侧滑属性.
+    }, (item: string) => JSON.stringify(item))
+}
+.margin({top:10})
 
 ```
 
@@ -226,6 +278,7 @@ UI显示效果：
 UI显示效果：
 
 ![list5](list5.png)
+
 
 ---
 
