@@ -5,7 +5,7 @@
 
 ---
 
-这篇文章主要目的是初步学习List；
+这篇文章主要目的是初步学习列表 (List)组件的使用；
 
 
 
@@ -41,7 +41,7 @@ import router from '@ohos.router';
 
 # 效果为：
 
-<div align="center"> <img src="page_jump_with_data.gif" /> </div>
+<div align="center"> <img src="list_demo.gif" /> </div>
 
 
 ---
@@ -55,13 +55,14 @@ import router from '@ohos.router';
 
 # 参考资料
 
-
+1.创建列表 (List)
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/arkts-layout-development-create-list-V5
 
 ---
 
 # Demo源码
 
-
+ListDemo.rar
 
 ---
 
