@@ -1,6 +1,6 @@
 # 鸿蒙开发从零开始之List
 
-<img src="../image/flower_009.png">
+<img src="../image/flower_010.png">
 
 
 ---
@@ -17,9 +17,9 @@
 # 核心代码
 
 
-- 转到Second page页面，并传递数据
+- List 1
 
-在第一个page：
+
 
 ```java
 import router from '@ohos.router';
