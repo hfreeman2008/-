@@ -40,7 +40,7 @@ List() {
 .alignListItem(ListItemAlign.Center)
 ```
 
-
+---
 
 UI显示效果：
 
@@ -48,15 +48,134 @@ UI显示效果：
 
 
 
+---
 
-- 接收第一个page传递过来的数据
+## List 2
+
+```java
+//List 2
+Text("List 2")
+    .fontSize(20)
+    .fontColor(Color.Red)
+    .margin({top:20})
+List() {
+    ListItem() {
+    Row() {
+        Image($r('app.media.startIcon'))
+        .width(40)
+        .height(40)
+        .margin(10)
+        Text('小明')
+        .fontSize(20)
+    }
+    }
+    ListItem() {
+    Row() {
+        Image($r('app.media.startIcon'))
+        .width(40)
+        .height(40)
+        .margin(10)
+        Text('小红')
+        .fontSize(20)
+    }
+    }
+}
+.margin({top:10})
+```
+
+---
+
+UI显示效果：
+
+![list2](list2.png)
+
+---
+
+## List 3
+
+```java
+class Contact {
+  key: string = util.generateRandomUUID(true);
+  name: string;
+  icon: Resource;
+
+  constructor(name: string, icon: Resource) {
+    this.name = name;
+    this.icon = icon;
+  }
+}
+...
+
+private contacts: Array<object> = [
+new Contact('小明', $r("app.media.startIcon")),
+new Contact('小红', $r("app.media.startIcon")),
+]
+...
+//List 3
+Text("List 3")
+    .fontSize(20)
+    .fontColor(Color.Red)
+    .margin({top:20})
+List() {
+    ForEach(this.contacts, (item: Contact) => {
+    ListItem() {
+        Row() {
+        Image(item.icon)
+            .width(40)
+            .height(40)
+            .margin(10)
+        Text(item.name).fontSize(20)
+        }
+        .width('100%')
+        .justifyContent(FlexAlign.Start)
+    }
+    }, (item: Contact) => JSON.stringify(item))
+}
+.margin({top:10})
+```
+
+---
+
+UI显示效果：
+
+![list3](list3.png)
 
 
+
+---
+
+## List 4
 
 ```java
 
+```
+
+---
+
+UI显示效果：
+
+![list4](list4.png)
+
+---
+
+## List 5
+
+```java
 
 ```
+
+---
+
+UI显示效果：
+
+![list5](list5.png)
+
+---
+
+
+
+
+
 
 # 效果为：
 
