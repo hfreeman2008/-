@@ -23,6 +23,8 @@
 
 ## List 1
 
+正常的小数据量的一个List
+
 ```java
 //List 1
 Text("List 1")
@@ -55,6 +57,8 @@ UI显示效果：
 ---
 
 ## List 2
+
+ListItem 为图片和Text的List
 
 ```java
 //List 2
