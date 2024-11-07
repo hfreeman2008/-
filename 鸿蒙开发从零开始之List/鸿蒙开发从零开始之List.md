@@ -156,6 +156,8 @@ UI显示效果：
 
 ## List 4
 
+分组的List
+
 ```java
 class ContactsGroup {
   title: string = ''
@@ -238,6 +240,8 @@ UI显示效果：
 ---
 
 ## List 5
+
+响应列表项侧滑的List
 
 ```java
   @State alphabets: Array<string> = ['#', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
