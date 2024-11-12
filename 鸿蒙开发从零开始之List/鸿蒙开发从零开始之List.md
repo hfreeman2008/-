@@ -2,6 +2,10 @@
 
 <img src="../image/flower_010.png">
 
+---
+
+
+[跳转到readme](https://github.com/hfreeman2008/Harmony-from-zero/blob/main/README.md)
 
 ---
 

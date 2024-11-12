@@ -4,6 +4,13 @@
 
 ---
 
+
+
+
+[跳转到readme](https://github.com/hfreeman2008/Harmony-from-zero/blob/main/README.md)
+
+---
+
 老规矩，第一篇文章就是Helloworld，以完成开发环境的配置，鸿蒙开发的基础入门。
 
 # 必备

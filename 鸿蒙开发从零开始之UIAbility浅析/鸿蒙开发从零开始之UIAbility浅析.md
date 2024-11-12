@@ -5,6 +5,12 @@
 
 ---
 
+
+[跳转到readme](https://github.com/hfreeman2008/Harmony-from-zero/blob/main/README.md)
+
+---
+
+
 这篇文章主要目的是初步学习Ability Kit（程序框架服务）的UIAbility组件；
 
 对比android开发中的Activity，UIAbility我们需要了解其生命周期的接口。

@@ -4,6 +4,11 @@
 
 ---
 
+
+[跳转到readme](https://github.com/hfreeman2008/Harmony-from-zero/blob/main/README.md)
+
+---
+
 这篇文章主要目的是学习点击一个Button，实现界面的跳转；
 
 这个就是鸿蒙开发的官网的第一个例子：
