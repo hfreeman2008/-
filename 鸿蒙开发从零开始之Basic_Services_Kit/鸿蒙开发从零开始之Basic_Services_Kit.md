@@ -68,15 +68,54 @@ Basic Services Kit（基础服务）作为基础服务套件，为应用开发�
 2. 公共回调：定义了HarmonyOS ArkTS接口的公共回调类型，包括接口调用时出现的公共回调和公共错误信息。
 3. 时间时区：提供获取系统时间以及系统时区的能力。
 
+---
+
+# 设备管理
 
 
-# 核心代码
+---
+
+## 电量信息
+
+该模块主要提供电池状态和充放电状态的查询接口。
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/js-apis-battery-info-V5
 
 
-## 关键逻辑说明
+![电量信息](电量信息.png)
 
+## 测试属性Demo接口
 
-1.
+```java
+let batterySOCInfo: number = batteryInfo.batterySOC;
+console.info("The batterySOCInfo is: " + batterySOCInfo);
+
+let chargingStatusInfo = batteryInfo.chargingStatus;
+console.info("The chargingStatusInfo is: " + chargingStatusInfo);
+
+let healthStatusInfo = batteryInfo.healthStatus;
+console.info("The healthStatusInfo is: " + healthStatusInfo);
+
+let pluggedTypeInfo = batteryInfo.pluggedType;
+console.info("The pluggedTypeInfo is: " + pluggedTypeInfo);
+
+let voltageInfo: number = batteryInfo.voltage;
+console.info("The voltageInfo is: " + voltageInfo);
+
+let technologyInfo: string = batteryInfo.technology;
+console.info("The technologyInfo is: " + technologyInfo);
+
+let batteryTemperatureInfo: number = batteryInfo.batteryTemperature;
+console.info("The batteryTemperatureInfo is: " + batteryTemperatureInfo);
+
+let isBatteryPresentInfo: boolean = batteryInfo.isBatteryPresent;
+console.info("The isBatteryPresentInfo is: " + isBatteryPresentInfo);
+
+let batteryCapacityLevelInfo = batteryInfo.batteryCapacityLevel;
+console.info("The batteryCapacityLevelInfo is: " + batteryCapacityLevelInfo);
+```
+
+---
 
 ```java
 
