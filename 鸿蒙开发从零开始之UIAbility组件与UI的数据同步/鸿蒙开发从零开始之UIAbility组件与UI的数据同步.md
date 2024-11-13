@@ -50,17 +50,146 @@ ArkUI提供了AppStorage和LocalStorage两种应用级别的状态管理方案�
 
 # EventHub
 
+
+使用EventHub进行数据通信
+
+EventHub为UIAbility组件提供了事件机制，使它们能够进行订阅、取消订阅和触发事件等数据通信能力。
+
+
+## 关键代码
+
+
+在EntryAbility中：
+
+```java
+onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
+
+    //1.订阅指定事件
+    let eventhub = this.context.eventHub;
+    //2.执行订阅操作
+    eventhub.on('event1', this.eventFunc);
+    eventhub.on('event1', (data: string) => {
+        hilog.info(0x0000, 'testTag', '%{public}s', 'data：' + JSON.stringify(data));
+    });
+
+}
+//订阅回调接口
+eventFunc(argOne: Context, argTwo: Context): void {
+    hilog.info(DOMAIN_NUMBER, TAG, '=========eventFunc:' + `${argOne}, ${argTwo}`);
+return;
+}
+
+
+onDestroy(): void {
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onDestroy');
+    //3.调用eventHub.off()方法取消该事件的订阅
+    this.context.eventHub.off('event1');
+}
+```
+
+
+```java
+//Index.ets
+
+  private context = getContext(this) as common.UIAbilityContext;
+  eventHubFunc(): void {
+    console.log("eventHubFunc");
+    // emit不带参数触发自定义“event1”事件
+    this.context.eventHub.emit('event1');
+    // emit带1个参数触发自定义“event1”事件
+    this.context.eventHub.emit('event1', 1);
+    // emit带2个参数触发自定义“event1”事件
+    this.context.eventHub.emit('event1', 2, 'test');
+  }
+
+
+
+  build() {
+    Column() {
+
+      Button('button')
+        .fontSize(40)
+        .margin({top:40,bottom:10})
+        .onClick(() => {
+          console.log("click");
+          //4 emit 触发指定事件。
+          this.eventHubFunc();
+        }
+        )
+```
+
+
 ---
 
 # PersistentStorage
 
+PersistentStorage是应用程序中的可选单例对象。此对象的作用是持久化存储选定的AppStorage属性，以确保这些属性在应用程序重新启动时的值与应用程序关闭时的值相同。
 
+PersistentStorage将选定的AppStorage属性保留在设备磁盘上。应用程序通过API，以决定哪些AppStorage属性应借助PersistentStorage持久化。UI和业务逻辑不直接访问PersistentStorage中的属性，所有属性访问都是对AppStorage的访问，AppStorage中的更改会自动同步到PersistentStorage。
+
+PersistentStorage和AppStorage中的属性建立双向同步。应用开发通常通过AppStorage访问PersistentStorage，另外还有一些接口可以用于管理持久化属性，但是业务逻辑始终是通过AppStorage获取和设置属性的。
+
+
+
+## 关键代码
+
+PersistentStorage和UI实例相关联，持久化操作需要在UI实例初始化成功后（即loadContent传入的回调被调用时）才可以被调用，早于该时机调用会导致持久化失败。
+
+
+
+```java
+// EntryAbility.ets
+
+  onWindowStageCreate(windowStage: window.WindowStage): void {
+    // Main window is created, set main page for this ability
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
+
+    windowStage.loadContent('pages/Index', (err) => {
+      if (err.code) {
+        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
+        return;
+      }
+      hilog.info(0x0000, 'testTag', 'Succeeded in loading the content.');
+    });
+
+    //1.初始化PersistentStorage
+    PersistentStorage.persistProp('aProp', 47);
+    //2.AppStorage获取对应属性
+    let aPropValue = AppStorage.get<number>('aProp');
+    hilog.info(0x0000, 'testTag', 'aPropValue:' + aPropValue);
+  }
+```
+
+```java
+//Index.ets
+
+PersistentStorage.persistProp('aProp', 48);
+
+@Entry
+@Component
+struct Index {
+
+  @StorageLink('aProp') aProp: number = 48
+
+  build() {
+    Column() {
+
+        // 应用退出时会保存当前结果。重新启动后，会显示上一次的保存结果
+      Button(`${this.aProp}`)
+        .onClick(() => {
+          this.aProp += 1;
+        })
+        .fontSize(40)
+        .margin({top:40,bottom:10})
+
+```
 
 ---
 
 # 运行效果
 
-<div align="center"> <img src="Basic_Services_Kit.gif" /> </div>
+<div align="center"> <img src="eventbug.gif" /> </div>
 
 ---
 
