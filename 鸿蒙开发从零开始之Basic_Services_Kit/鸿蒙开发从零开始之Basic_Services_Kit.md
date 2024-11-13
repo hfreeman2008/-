@@ -84,7 +84,7 @@ https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/js-apis-bat
 
 ![电量信息](电量信息.png)
 
-## 测试属性Demo接口
+- 测试属性Demo接口
 
 ```java
 let batterySOCInfo: number = batteryInfo.batterySOC;
@@ -117,9 +117,121 @@ console.info("The batteryCapacityLevelInfo is: " + batteryCapacityLevelInfo);
 
 ---
 
-```java
+## 获取设备信息
 
+本模块提供终端设备信息查询，开发者不可配置。
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/js-apis-device-info-V5
+
+
+
+- 测试属性Demo接口
+
+```java
+let deviceTypeInfo: string = deviceInfo.deviceType;
+console.info('the value of the deviceType is :' + deviceTypeInfo);
+
+let manufactureInfo: string = deviceInfo.manufacture;
+console.info('the value of the manufactureInfo is :' + manufactureInfo);
+
+let brandInfo: string = deviceInfo.brand;
+console.info('the value of the device brand is :' + brandInfo);
+
+let marketNameInfo: string = deviceInfo.marketName;
+console.info('the value of the deviceInfo marketName is :' + marketNameInfo);
+
+let productSeriesInfo: string = deviceInfo.productSeries;
+console.info('the value of the deviceInfo productSeries is :' + productSeriesInfo);
+
+let productModelInfo: string = deviceInfo.productModel;
+console.info('the value of the deviceInfo productModel is :' + productModelInfo);
+
+let softwareModelInfo: string = deviceInfo.softwareModel;
+console.info('the value of the deviceInfo softwareModel is :' + softwareModelInfo);
+
+let hardwareModelInfo: string = deviceInfo.hardwareModel;
+console.info('the value of the deviceInfo hardwareModel is :' + hardwareModelInfo);
+
+let serialInfo: string = deviceInfo.serial;
+console.info('the value of the deviceInfo serial is :' + serialInfo);
+
+let bootloaderVersionInfo: string = deviceInfo.bootloaderVersion;
+console.info('the value of the deviceInfo bootloaderVersion is :' + bootloaderVersionInfo);
+
+let abiListInfo: string = deviceInfo.abiList;
+console.info('the value of the deviceInfo abiList is :' + abiListInfo);
+
+let securityPatchTagInfo: string = deviceInfo.securityPatchTag;
+console.info('the value of the deviceInfo securityPatchTag is :' + securityPatchTagInfo);
+
+let displayVersionInfo: string = deviceInfo.displayVersion;
+console.info('the value of the deviceInfo displayVersion is :' + displayVersionInfo);
+
+let incrementalVersionInfo: string = deviceInfo.incrementalVersion;
+console.info('the value of the deviceInfo incrementalVersion is :' + incrementalVersionInfo);
+
+let osReleaseTypeInfo: string = deviceInfo.osReleaseType;
+console.info('the value of the deviceInfo osReleaseType is :' + osReleaseTypeInfo);
+
+let osFullNameInfo: string = deviceInfo.osFullName;
+console.info('the value of the deviceInfo osFullName is :' + osFullNameInfo);
+
+let majorVersionInfo: number = deviceInfo.majorVersion;
+console.info('the value of the deviceInfo majorVersion is :' + majorVersionInfo);
+
+let seniorVersionInfo: number = deviceInfo.seniorVersion;
+console.info('the value of the deviceInfo seniorVersion is :' + seniorVersionInfo);
+
+let featureVersionInfo: number = deviceInfo.featureVersion;
+console.info('the value of the deviceInfo featureVersion is :' + featureVersionInfo);
+
+let buildVersionInfo: number = deviceInfo.buildVersion;
+console.info('the value of the deviceInfo buildVersion is :' + buildVersionInfo);
+
+let sdkApiVersionInfo: number = deviceInfo.sdkApiVersion;
+console.info('the value of the deviceInfo sdkApiVersion is :' + sdkApiVersionInfo);
+
+let firstApiVersionInfo: number = deviceInfo.firstApiVersion;
+console.info('the value of the deviceInfo firstApiVersion is :' + firstApiVersionInfo);
+
+let versionIdInfo: string = deviceInfo.versionId;
+console.info('the value of the deviceInfo versionId is :' + versionIdInfo);
+
+let buildTypeInfo: string = deviceInfo.buildType;
+console.info('the value of the deviceInfo buildType is :' + buildTypeInfo);
+
+let buildUserInfo: string = deviceInfo.buildUser;
+console.info('the value of the deviceInfo buildUser is :' + buildUserInfo);
+
+let buildHostInfo: string = deviceInfo.buildHost;
+console.info('the value of the deviceInfo buildHost is :' + buildHostInfo);
+
+let buildTimeInfo: string = deviceInfo.buildTime;
+console.info('the value of the deviceInfo buildTime is :' + buildTimeInfo);
+
+let buildRootHashInfo: string = deviceInfo.buildRootHash;
+console.info('the value of the deviceInfo buildRootHash is :' + buildRootHashInfo);
+
+let udid: string = deviceInfo.udid;
+console.info('the value of the deviceInfo udid is :' + udid);
+
+let distributionOSName: string = deviceInfo.distributionOSName
+console.info('the value of the deviceInfo distributionOSName is :' + distributionOSName);
+
+let distributionOSVersion: string = deviceInfo.distributionOSVersion
+console.info('the value of the deviceInfo distributionOSVersion is :' + distributionOSVersion);
+
+let distributionOSApiVersion: number = deviceInfo.distributionOSApiVersion
+console.info('the value of the deviceInfo distributionOSApiVersion is :' + distributionOSApiVersion);
+
+let distributionOSReleaseType: string = deviceInfo.distributionOSReleaseType
+console.info('the value of the deviceInfo distributionOSReleaseType is :' + distributionOSReleaseType);
+
+let odid: string = deviceInfo.ODID;
+console.info('the value of the deviceInfo odid is :' + odid);
 ```
+
+---
 
 2.
 
