@@ -22,7 +22,28 @@
 
 # UIAbility组件与UI的数据同步
 
+基于当前的应用模型，可以通过以下几种方式来实现UIAbility组件与UI之间的数据同步。
 
+- 使用EventHub进行数据通信：
+
+在基类Context中提供了EventHub对象，可以通过发布订阅方式来实现事件的传递。在事件传递前，订阅者需要先进行订阅，当发布者发布事件时，订阅者将接收到事件并进行相应处理。
+
+- 使用AppStorage/LocalStorage进行数据同步：
+
+ArkUI提供了AppStorage和LocalStorage两种应用级别的状态管理方案，可用于实现应用级别和UIAbility级别的数据同步。
+
+---
+
+# 两个UIAbility之间可通过哪些方法实现数据传递
+
+两个UIAbility之间数据传递的方法如下，推荐优先使用排序靠前的方法。
+
+- 方法一：调用startAbility接口启动另外一个UIAbility时，通过wantInfo添加启动参数。也可通过startAbilityForResult接口，获取被调用方UIAbility在关闭时返回的信息。
+- 方法二：使用应用级别的状态管理AppStorage、PersistentStorage、Environment，实现应用级或者多个页面的状态数据共享。
+- 方法三：同一个应用中UIAbility和UIAbility之间的数据传递，可以使用AppStorage/LocalStorage进行数据同步。
+- 方法四：使用线程间通信工具Emitter、Worker进行通信。
+- 方法五：使用进程间通信工具CES（公共事件服务）进行通信。
+- 其他方法（系统应用）：通过Call调用实现UIAbility交互。
 
 
 ---
