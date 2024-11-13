@@ -762,7 +762,7 @@ settings.setValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, '100', (st
 
 # 运行效果
 
-
+<div align="center"> <img src="Basic_Services_Kit.gif" /> </div>
 
 ---
 
