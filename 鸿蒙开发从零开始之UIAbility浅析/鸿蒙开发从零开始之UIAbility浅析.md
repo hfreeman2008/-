@@ -227,11 +227,6 @@ onCreate  -- onWindowStageCreate -- onForeground
 
 当前还无结论；
 
-
-- 回答一下鸿蒙系统到底是不是android系统的套皮疑惑？
-
-当前还无结论；
-
 ---
 
 # 参考资料
