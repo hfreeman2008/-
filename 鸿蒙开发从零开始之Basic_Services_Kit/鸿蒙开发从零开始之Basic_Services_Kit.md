@@ -773,6 +773,7 @@ settings.setValue(context, settings.display.SCREEN_BRIGHTNESS_STATUS, '100', (st
 https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/basic-services-kit-overview-V5
 
 2.Basic Services Kit（基础服务）
+
 https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/basic-services-arkts-V5
 
 ---
@@ -784,6 +785,18 @@ Demo:
 基于SDK 12(5.0.0)版本，完成调试，可以运行。
 
 BatteryInfoDemo.rar
+
+---
+
+# 结束语
+
+当你自己对着官方文档，将此demo跑起来过一篇后，至此，基本上harmonyOS应用开发我们可以说是入门了。
+
+后面我们其实就是针对新需求，不断的搜索资料，调试接口，总结提升的一个过程了。
+
+恭喜你自己吧！
+
+
 
 ---
 
