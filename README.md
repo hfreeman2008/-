@@ -80,7 +80,7 @@
 
 ## H12 鸿蒙开发从零开始之Basic Services Kit
 
-[鸿蒙开发从零开始之Basic_Services_Kit.md](./鸿蒙开发从零开始之Basic_Services_Kit./鸿蒙开发从零开始之Basic_Services_Kit.md)
+[鸿蒙开发从零开始之Basic_Services_Kit.md](./鸿蒙开发从零开始之Basic_Services_Kit/鸿蒙开发从零开始之Basic_Services_Kit.md)
 
 ---
 
