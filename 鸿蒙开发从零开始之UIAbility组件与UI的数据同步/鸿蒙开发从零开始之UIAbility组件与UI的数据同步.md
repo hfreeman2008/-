@@ -14,23 +14,24 @@
 
 ---
 
-这篇文章主要目的是初步学习；
+这篇文章主要目的是了解UIAbility组件与UI的数据同步的方法；
+
+---
+
+
+
+# UIAbility组件与UI的数据同步
 
 
 
 
 ---
 
-
-
-# 设备管理
-
+# EventHub
 
 ---
 
-## 电量信息
-
-
+# PersistentStorage
 
 
 
@@ -44,7 +45,21 @@
 
 # 参考资料
 
+1.两个UIAbility之间可通过哪些方法实现数据传递
 
+https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs-V5/faqs-ability-31-V5
+
+2.UIAbility组件与UI的数据同步
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/uiability-data-sync-with-ui-V5
+
+3.EventHub
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/js-apis-inner-application-eventhub-V5#eventhubon
+
+4.从AppStorage中访问PersistentStorage初始化的属性
+
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/arkts-persiststorage-V5#%E4%BB%8Eappstorage%E4%B8%AD%E8%AE%BF%E9%97%AEpersistentstorage%E5%88%9D%E5%A7%8B%E5%8C%96%E7%9A%84%E5%B1%9E%E6%80%A7
 
 ---
 
