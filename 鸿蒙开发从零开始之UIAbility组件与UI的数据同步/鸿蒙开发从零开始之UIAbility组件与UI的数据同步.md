@@ -219,7 +219,7 @@ Demo:
 
 基于SDK 12(5.0.0)版本，完成调试，可以运行。
 
-.rar
+EventHubDemo.rar
 
 ---
 
