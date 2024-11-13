@@ -79,7 +79,7 @@ Demo:
 
 ---
 
-[<font face='黑体' color=#ff0000 size=40 >跳转到文章开始</font>](#鸿蒙开发从零开始之UIAbility组件与UI的数据同步.md)
+[<font face='黑体' color=#ff0000 size=40 >跳转到文章开始</font>](#鸿蒙开发从零开始之UIAbility组件与UI的数据同步)
 
 ---
 
