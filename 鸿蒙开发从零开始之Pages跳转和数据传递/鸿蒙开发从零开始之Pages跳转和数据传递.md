@@ -7,13 +7,18 @@
 
 [跳转到readme](https://github.com/hfreeman2008/Harmony-from-zero/blob/main/README.md)
 
+---
+
+[<font face='黑体' color=#ff0000 size=40 >跳转到文章结尾</font>](#Demo源码)
 
 ---
+
+# 目的
 
 这篇文章主要目的是初步学习Ability Pages跳转和数据传递；
 
 
-参考：
+# 参考：
 
 鸿蒙HarmonyOS应用开发入门  柳伟卫 清华大学出版社  2.4 实战：Ability内页面的跳转和数据传递
 
