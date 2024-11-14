@@ -8,8 +8,14 @@
 
 [跳转到readme](https://github.com/hfreeman2008/Harmony-from-zero/blob/main/README.md)
 
+
 ---
 
+[<font face='黑体' color=#ff0000 size=40 >跳转到文章结尾</font>](#Demo源码)
+
+---
+
+# 目的
 
 这篇文章主要目的是初步学习Ability Kit（程序框架服务）的UIAbility组件；
 
