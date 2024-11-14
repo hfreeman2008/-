@@ -9,6 +9,12 @@
 
 ---
 
+[<font face='黑体' color=#ff0000 size=40 >跳转到文章结尾</font>](#Demo源码)
+
+---
+
+# Preferences 
+
 Preferences,用户首选项实现数据持久化，主要功能是：
 
 为应用提供Key-Value键值型的数据处理能力，支持应用持久化轻量级数据，并对其修改和查询。
