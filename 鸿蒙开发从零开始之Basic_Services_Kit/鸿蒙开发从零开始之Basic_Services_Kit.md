@@ -115,6 +115,9 @@ let batteryCapacityLevelInfo = batteryInfo.batteryCapacityLevel;
 console.info("The batteryCapacityLevelInfo is: " + batteryCapacityLevelInfo);
 ```
 
+
+
+
 ---
 
 ## 获取设备信息
@@ -229,6 +232,42 @@ console.info('the value of the deviceInfo distributionOSReleaseType is :' + dist
 
 let odid: string = deviceInfo.ODID;
 console.info('the value of the deviceInfo odid is :' + odid);
+```
+
+对应deviceInfo类定义在：
+
+interface/sdk-js/api/@ohos.deviceInfo.d.ts
+
+```java
+declare namespace deviceInfo {
+  ......
+/**
+ * Obtains the product model represented by a string.
+ *
+ * @constant
+ * @syscap SystemCapability.Startup.SystemInfo
+ * @since 6
+ */
+/**
+ * Obtains the product model represented by a string.
+ *
+ * @constant
+ * @syscap SystemCapability.Startup.SystemInfo
+ * @crossplatform
+ * @since 10
+ */
+/**
+ * Obtains the product model represented by a string.
+ *
+ * @constant
+ * @syscap SystemCapability.Startup.SystemInfo
+ * @crossplatform
+ * @atomicservice
+ * @since 11
+ */
+const productModel: string;
+......
+}
 ```
 
 ---
