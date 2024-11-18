@@ -307,6 +307,14 @@ static napi_value GetProductModel(napi_env env, napi_callback_info info)
 }
 ```
 
+base/startup/init/interfaces/innerkits/syspara/param_comm.c
+```c
+INIT_LOCAL_API const char *GetProductModel_(void)
+{
+    static const char *productModel = NULL;
+    return GetProperty("const.product.model", &productModel);
+}
+```
 
 ---
 
