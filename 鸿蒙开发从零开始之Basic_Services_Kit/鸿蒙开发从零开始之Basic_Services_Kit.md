@@ -234,6 +234,11 @@ let odid: string = deviceInfo.ODID;
 console.info('the value of the deviceInfo odid is :' + odid);
 ```
 
+
+### 以productModel为例,我们查看源码中的具体实现：
+
+
+
 对应deviceInfo类定义在：
 
 interface/sdk-js/api/@ohos.deviceInfo.d.ts
@@ -269,6 +274,39 @@ const productModel: string;
 ......
 }
 ```
+
+
+base/startup/init/interfaces/kits/jskits/src/native_deviceinfo_js.cpp
+
+```cpp
+static napi_value Init(napi_env env, napi_value exports)
+{
+    /*
+     * Attribute definition
+     */
+    napi_property_descriptor desc[] = {
+        {"deviceType", nullptr, nullptr, GetDeviceType, nullptr, nullptr, napi_default, nullptr},
+        {"manufacture", nullptr, nullptr, GetManufacture, nullptr, nullptr, napi_default, nullptr},
+        {"brand", nullptr, nullptr, GetBrand, nullptr, nullptr, napi_default, nullptr},
+        {"marketName", nullptr, nullptr, GetMarketName, nullptr, nullptr, napi_default, nullptr},
+        {"productSeries", nullptr, nullptr, GetProductSeries, nullptr, nullptr, napi_default, nullptr},
+        {"productModel", nullptr, nullptr, GetProductModel, nullptr, nullptr, napi_default, nullptr},
+        .....
+}
+
+static napi_value GetProductModel(napi_env env, napi_callback_info info)
+{
+    napi_value napiValue = nullptr;
+    const char *productModel = GetProductModel();
+    if (productModel == nullptr) {
+        productModel = "";
+    }
+
+    NAPI_CALL(env, napi_create_string_utf8(env, productModel, strlen(productModel), &napiValue));
+    return napiValue;
+}
+```
+
 
 ---
 
